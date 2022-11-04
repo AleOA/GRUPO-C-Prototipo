@@ -5,7 +5,6 @@
 -Usuario: cai  
 -Contraseña: cai  
 - El usuario SIEMPRE debe iniciar sesión para utilizar el sistema.
-- Para aquellas funcionalidades no implementadas, el sistema lanza un mensaje: "No Implementado".
 
 *Solicitud Orden de Servicio*
 - Funciona para Tipos de Envío Nacionales e Internacionales.
