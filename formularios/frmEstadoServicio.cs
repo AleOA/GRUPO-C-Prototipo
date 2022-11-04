@@ -47,15 +47,29 @@ namespace Test_WinForms.formularios
                     // Solicitud numero 2 le asigno el estado en transito
                     // Solicitud numero 3 le asigno el estado cerrada
 
+                    //EN TP FINAL los datos se llenan del archivo
+
                     if(numerosolicitud == 1)
                     {
-                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[0]);
+                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[0] + "\n" + "\n"
+                            + "Region Origen: Metropolitana"+ "\n" + "Provincia Origen: Buenos Aires" + "\n" + "Localidad Origen: Tandil" + "\n"
+                            + "Modalidad Origen: Sucursal" + "\n" + "Peso (KG): 10-20" + "\n" + "Prioridad: No Urgente" + "\n"
+                            + "Pais Destino: Argentina" + "\n" + "Region Destino: Metropolitana" + "\n" + "Provincia Destino: Buenos Aires" + "\n"
+                            + "Localidad Destino: Tandil" + "\n" + "Modalidad Destino: Sucursal" + "\n" + "Tarifa: 4200$" + "\n");
                     } else if (numerosolicitud == 2)
                     {
-                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[1]);
+                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[1] + "\n" + "\n"
+                            + "Region Origen: Metropolitana" + "\n" + "Provincia Origen: CABA" + "\n" + "Localidad Origen: CABA " + "\n"
+                            + "Modalidad Origen: Sucursal" + "\n" + "Peso (KG): 20-30" + "\n" + "Prioridad: No Urgente" + "\n"
+                            + "Pais Destino: España" + "\n" + "Region Destino: Europa" + "\n" + "Direccion Destino: bartolome mitre 24533" 
+                            + "\n" + "Tarifa: $12825" + "\n");
                     } else if(numerosolicitud == 3)
                     {
-                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[2]);
+                        MessageBox.Show("El estado de la solictud " + numerosolicitud + " es: " + listaEstados[2] + "\n" + "\n"
+                            + "Region Origen: Sur" + "\n" + "Provincia Origen: Santa Cruz" + "\n" + "Localidad Origen: El Calafate" + "\n"
+                            + "Modalidad Origen: Puerta" + "\n"+ "Direccion: rivadavia 34235" + "\n" + "Peso (KG): 0-0.5" + "\n" + "Prioridad: Urgente" + "\n"
+                            + "Pais Destino: Argentina" + "\n" + "Region Destino: Metroplitana" + "\n" + "Provincia Destino: Buenos Aires" + "\n"
+                            + "Localidad Destino: Lujan" + "\n" + "Modalidad Destino: Sucursal" + "\n" + "Tarifa: $4925" + "\n");
                     }
                 }
             }

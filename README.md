@@ -7,21 +7,24 @@
 - El usuario SIEMPRE debe iniciar sesión para utilizar el sistema.
 - Para aquellas funcionalidades no implementadas, el sistema lanza un mensaje: "No Implementado".
 
-*Solicitud/Cancelación de Servicio*
-- Estado Inicial:  
-No hay pedidos cargados.
-- Únicamente funciona para Tipos de Envío Nacionales.
-- Se cargaron Ciudades de prueba tanto de origen como de destino.
-- A las Ciudades de Destino cargadas se les asigno una tarifa.
-- Se puede generar una solicitud de servicio.
-- Se pueden cancelar las solicitudes de servicio generadas.
+*Solicitud Orden de Servicio*
+- Funciona para Tipos de Envío Nacionales e Internacionales.
+- Nacionales: Se cargaron de Origen y Destino:  
+-2 Regiones: Metropolitana y Sur  
+-4 Provincias: Buenos Aires, CABA, Santa Cruz, Rio Negro  
+-7 Localidades: Lujan, Tandil, CABA, Rio Gallegos, El Calafate, San Carlos de Bariloche, Viedma  
+- Internacionales:  
+-Se cargó País España de Destino y Región: Europa.  
+- Se puede leer la tarifa en tiempo real.
+- Se puede generar una solicitud de servicio una vez completados los campos requeridos.
+
 
 *Estado del Servicio*
 - Estado Inicial:  
 Se le cargaron 3 envíos de prueba:  
--Envío 1 con estado: Recibida  
--Envío 2 con estado: En Tránsito.  
--Envío 3 con estado: Cerrada.  
+-Envío 1 con estado: Recibida y sus datos.  
+-Envío 2 con estado: En Tránsito y sus datos.  
+-Envío 3 con estado: Cerrada y sus datos.  
 - Se puede consultar el estado de cualquiera de los 3 envíos cargados.
 
 *Estado de Cuenta*

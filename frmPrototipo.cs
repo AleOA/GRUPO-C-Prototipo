@@ -77,16 +77,10 @@ namespace Test_WinForms
                 txtUsuario.Visible = false;
                 txtPassword.Visible = false;
                 btnIniciarSesion.Visible = false;
-                btnRegistrarse.Visible = false;
                 lblBienvenida.Text = "Bienvenido/a al Sistema: " + usuario;
                 lblBienvenida.Visible = true;
 
             }
-        }
-
-        private void btnRegistrarse_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("No implementado.", "No Implementado");
         }
 
         public void HabilitarMenu()
@@ -101,6 +95,16 @@ namespace Test_WinForms
             SolicitudCancelacionEnvioMenu.Enabled = false;
             EstadoDelServicioMenu.Enabled = false;
             EstadoDeCuentaMenu.Enabled = false;
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

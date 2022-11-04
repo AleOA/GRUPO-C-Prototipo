@@ -39,7 +39,6 @@
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnRegistrarse = new System.Windows.Forms.Button();
             this.mnsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,8 +55,8 @@
             // 
             this.SolicitudCancelacionEnvioMenu.Enabled = false;
             this.SolicitudCancelacionEnvioMenu.Name = "SolicitudCancelacionEnvioMenu";
-            this.SolicitudCancelacionEnvioMenu.Size = new System.Drawing.Size(236, 24);
-            this.SolicitudCancelacionEnvioMenu.Text = "Solicitud / Cancelación de Envío";
+            this.SolicitudCancelacionEnvioMenu.Size = new System.Drawing.Size(158, 24);
+            this.SolicitudCancelacionEnvioMenu.Text = "Solicitud de Servicio";
             this.SolicitudCancelacionEnvioMenu.Click += new System.EventHandler(this.SolicitudCancelacionEnvioMenu_Click);
             // 
             // EstadoDelServicioMenu
@@ -134,6 +133,7 @@
             this.txtUsuario.PlaceholderText = "Ingrese su Usuario";
             this.txtUsuario.Size = new System.Drawing.Size(175, 27);
             this.txtUsuario.TabIndex = 10;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtPassword
             // 
@@ -144,22 +144,11 @@
             this.txtPassword.Size = new System.Drawing.Size(175, 27);
             this.txtPassword.TabIndex = 11;
             // 
-            // btnRegistrarse
-            // 
-            this.btnRegistrarse.Location = new System.Drawing.Point(681, 313);
-            this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(163, 56);
-            this.btnRegistrarse.TabIndex = 12;
-            this.btnRegistrarse.Text = "Registrarse";
-            this.btnRegistrarse.UseVisualStyleBackColor = true;
-            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
-            // 
             // frmPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 381);
-            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
@@ -190,6 +179,5 @@
         private Label lblContraseña;
         private TextBox txtUsuario;
         private TextBox txtPassword;
-        private Button btnRegistrarse;
     }
 }
