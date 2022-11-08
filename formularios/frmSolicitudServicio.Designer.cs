@@ -534,7 +534,7 @@
             // 
             this.lblTarifaTiempoReal.AutoSize = true;
             this.lblTarifaTiempoReal.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTarifaTiempoReal.Location = new System.Drawing.Point(697, 341);
+            this.lblTarifaTiempoReal.Location = new System.Drawing.Point(706, 341);
             this.lblTarifaTiempoReal.Name = "lblTarifaTiempoReal";
             this.lblTarifaTiempoReal.Size = new System.Drawing.Size(165, 20);
             this.lblTarifaTiempoReal.TabIndex = 58;
@@ -594,6 +594,7 @@
             this.Controls.Add(this.lblDireccionOrigen);
             this.Name = "frmSolicitudServicio";
             this.Text = "Solicitud Orden de Servicio";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.frmSolicitudServicio_Load);
             this.MouseEnter += new System.EventHandler(this.frmSolicitudServicio_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.frmSolicitudServicio_MouseLeave);
