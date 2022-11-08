@@ -810,27 +810,29 @@ namespace Test_WinForms.formularios
                     tarifaACABA += tarifaLocalLocalhasta30kg;
                 }
 
-                // Servicio adicional: Recargo Urgente
-                if (prioridad == "Urgente")
-                {
-                    float calculotarifaconrecargo = tarifaACABA * porcUrgente; // para luego validar que el recargo sea <= al tope establecido en archivo
-                    float recargo = calculotarifaconrecargo - tarifaACABA;
+                //ESTO NO LO AGREGO PORQUE YA LO CALCULO EN LA TARIFA PRINCIPAL DE INTERNACIONALES
 
-                    if (recargo <= topeUrgente)
-                    {
-                        tarifaACABA = tarifaACABA * porcUrgente;
-                    }
-                    else if (recargo > topeUrgente)
-                    {
-                        tarifaACABA += topeUrgente;
-                    }
-                }
+                //// Servicio adicional: Recargo Urgente
+                //if (prioridad == "Urgente")
+                //{
+                //    float calculotarifaconrecargo = tarifaACABA * porcUrgente; // para luego validar que el recargo sea <= al tope establecido en archivo
+                //    float recargo = calculotarifaconrecargo - tarifaACABA;
 
-                // Servicio adicional: Retiro en Puerta (Origen)
-                if (modalidadOrigen == "Puerta")
-                {
-                    tarifaACABA += RetiroPuerta;
-                }
+                //    if (recargo <= topeUrgente)
+                //    {
+                //        tarifaACABA = tarifaACABA * porcUrgente;
+                //    }
+                //    else if (recargo > topeUrgente)
+                //    {
+                //        tarifaACABA += topeUrgente;
+                //    }
+                //}
+
+                //// Servicio adicional: Retiro en Puerta (Origen)
+                //if (modalidadOrigen == "Puerta")
+                //{
+                //    tarifaACABA += RetiroPuerta;
+                //}
 
             }
 
